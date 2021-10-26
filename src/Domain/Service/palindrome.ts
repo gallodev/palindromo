@@ -2,7 +2,7 @@
 export default class PalindromeService {
   isValid = (text: string): boolean => { 
     // eslint-disable-next-line no-useless-escape
-    const pattern = /[^\w\s]/gi;
+    const pattern = /[^\w\s\!']/gi;
     const curVal = text.toLowerCase().replace(pattern,"");       
     const reverseVal = [...curVal].reverse().join("");    
 
