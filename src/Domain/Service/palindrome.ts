@@ -4,11 +4,9 @@ export default class PalindromeService {
     // eslint-disable-next-line no-useless-escape
     const pattern = /[^\w\s]/gi;
     const curVal = text.toLowerCase().replace(pattern,"");       
-    const reverseVal = [...curVal].reverse().join("");
+    const reverseVal = [...curVal].reverse().join("");    
 
-    console.log(curVal)
-    console.log(reverseVal)
-
+    
     if(curVal === reverseVal) {
       console.log(`A palavra ${text} é um palíndromo!`);
       return true;
